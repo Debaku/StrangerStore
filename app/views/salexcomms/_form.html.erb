@@ -1,0 +1,25 @@
+<%= form_for(@salexcomm) do |f| %>
+  <% if @salexcomm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@salexcomm.errors.count, "error") %> prohibited this salexcomm from being saved:</h2>
+
+      <ul>
+      <% @salexcomm.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quanxcomm %><br>
+    <%= f.number_field :quanxcomm %>
+  </div>
+  <div class="field">
+    <%= f.label :subtotal %><br>
+    <%= f.text_field :subtotal %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

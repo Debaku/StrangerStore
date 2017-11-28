@@ -1,0 +1,33 @@
+<p id=""><%= notice %></p>
+
+    <div class="imagen_logo">
+    <%= image_tag "stranger-store.png",:alt => "Strangerstore", :title => "strangerstore"%>
+    </div>
+
+<h1>Listing Sales</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Saledate</th>
+      <th>Amountsale</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sales.each do |sale| %>
+      <tr>
+        <td><%= sale.saleDate %></td>
+        <td><%= sale.amountSale %></td>
+        <td><%= link_to 'Show', sale %></td>
+        <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+        <td><%= link_to 'Destroy', sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sale', new_sale_path %>

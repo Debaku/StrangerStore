@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Salexcomms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quanxcomm</th>
+      <th>Subtotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @salexcomms.each do |salexcomm| %>
+      <tr>
+        <td><%= salexcomm.quanxcomm %></td>
+        <td><%= salexcomm.subtotal %></td>
+        <td><%= link_to 'Show', salexcomm %></td>
+        <td><%= link_to 'Edit', edit_salexcomm_path(salexcomm) %></td>
+        <td><%= link_to 'Destroy', salexcomm, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Salexcomm', new_salexcomm_path %>

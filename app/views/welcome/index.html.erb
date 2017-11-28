@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STRANGERSHOPINDEX</title>
+
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="imagen_logo">
+    <%= image_tag "stranger-store.png",:alt => "Strangerstore", :title => "strangerstore"%>
+</div>
+<div class="clear"></div>
+ 	<div id="navbar">
+ 	  <%= link_to "Inicio", :controller => "welcome" %>
+ 	  <%= link_to "Ventas", :controller => "sales" %>
+ 	  
+      <a href="/app/views/commodoties/index.html.erb">COMMODOTIES</a>
+      <a href="#contact">USERS</a>
+    </div>
+ 	
+    
+ 	
+ 	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+    
+    
+</body>
+</html>

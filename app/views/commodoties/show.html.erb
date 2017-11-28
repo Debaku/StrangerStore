@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @commodoty.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @commodoty.description %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @commodoty.cost %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @commodoty.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @commodoty.quantity %>
+</p>
+
+<p>
+  <strong>Quantitysold:</strong>
+  <%= @commodoty.quantitySold %>
+</p>
+
+<%= link_to 'Edit', edit_commodoty_path(@commodoty) %> |
+<%= link_to 'Back', commodoties_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  saleDate: 2017-11-26
+  ammountSale: MyString
+  float: MyString
+
+two:
+  saleDate: 2017-11-26
+  ammountSale: MyString
+  float: MyString
